@@ -14,6 +14,9 @@ The created services are available on the Internet, the solution is intended to 
 
 2. Create Azure deployment.
 `cd .\bps-for-azure-container-instances\`
+
+Make sh files executable: `chmod u+x *.sh`
+
 `./create.sh`
 
     Several Azure resources will be created: aci for SQL Server, SOLR, Caddy, bps-init, bps-portal, bps-service, storage account for persisting data. 
