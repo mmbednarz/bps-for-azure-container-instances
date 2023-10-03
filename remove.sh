@@ -1,3 +1,5 @@
+#!/bin/bash
+
 az login
 
 # Change these parameters as needed
