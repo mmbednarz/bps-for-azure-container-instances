@@ -210,9 +210,6 @@ while [ $attempt -lt $max_attempts ]; do
     fi
 done
 
-echo "Reached maximum retry attempts. Exiting."
-exit 1
-
 url="https://$( \
     az container show \
         --resource-group $ACI_PERS_RESOURCE_GROUP \
