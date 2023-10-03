@@ -202,7 +202,7 @@ while [ $attempt -lt $max_attempts ]; do
     
     if [ "$http_status" -eq 200 ]; then
         echo "HTTP status is 200 OK. Exiting."
-        exit 0
+        break
     else
         echo "HTTP status is $http_status. Retrying in $sleep_interval seconds..."
         sleep $sleep_interval
@@ -217,5 +217,6 @@ url="https://$( \
         --query "ipAddress.fqdn" \
         --output tsv
     )"
+
 echo "Your BPS instance is redy, go to: $url" 
 echo "BPS Admin Password is "P@ssw0rd"."
