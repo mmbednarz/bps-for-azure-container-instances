@@ -68,7 +68,7 @@ az container create \
 az container create \
     --resource-group $ACI_PERS_RESOURCE_GROUP \
     --name 2-search-server$RANDOM_ID \
-    --image webconbps/search:2023.1.2.68 \
+    --image webconbps/search:2023.1.2.99 \
     --dns-name-label search-server$RANDOM_ID \
     --ports 8983 \
     --cpu 1 \
@@ -87,7 +87,7 @@ az container create \
 az container create \
     --resource-group $ACI_PERS_RESOURCE_GROUP \
     --name 3-bps-init$RANDOM_ID \
-    --image webconbps/init:2023.1.2.68-windowsservercore-ltsc2022 \
+    --image webconbps/init:2023.1.2.99-windowsservercore-ltsc2022 \
     --dns-name-label bps-init$RANDOM_ID \
     --cpu 1 \
     --memory 1 \
@@ -129,7 +129,7 @@ done
 az container create \
     --resource-group $ACI_PERS_RESOURCE_GROUP \
     --name 4-bps-service$RANDOM_ID \
-    --image webconbps/service:2023.1.2.68-windowsservercore-ltsc2022 \
+    --image webconbps/service:2023.1.2.99-windowsservercore-ltsc2022 \
     --dns-name-label bps-service$RANDOM_ID \
     --cpu 1 \
     --memory 1 \
@@ -154,7 +154,7 @@ az container create \
 az container create \
     --resource-group $ACI_PERS_RESOURCE_GROUP \
     --name 5-bps-portal$RANDOM_ID \
-    --image webconbps/portal:2023.1.2.68-windowsservercore-ltsc2022 \
+    --image webconbps/portal:2023.1.2.99-windowsservercore-ltsc2022 \
     --dns-name-label bps-portal$RANDOM_ID \
     --cpu 1 \
     --memory 1.5 \
